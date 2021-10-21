@@ -1,0 +1,17 @@
+header{
+    width: auto;
+    height: 200px;
+    background-color: salmon;
+    
+}
+nav{
+    background-color:cornflowerblue;
+    height: 100px;
+    width: 60px;
+}
+section{
+    background-color: gray;
+    width: auto;
+    height: auto;
+    margin: 10%;
+}
