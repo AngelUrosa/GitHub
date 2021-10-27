@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.Fmenu{
+    fornt-family:roboto;
+}
+
+header{
+width: 100%;
+height: 120px;
+background-image: url(./ingenieria-informatica.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.cabezera{
+    background-color: aqua;
+}
+#buscador{
+    float: right;
+    margin-top: 40px;
+    margin-right: 40px;
+    padding-left: 15px;
+    background:url(./lupa.svg) no-repeat scroll;
+}
