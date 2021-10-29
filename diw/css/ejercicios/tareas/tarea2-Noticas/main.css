@@ -40,14 +40,14 @@ main{
     float: left;
     width: 70%;
     height: auto;
+    margin-top: 5px;
 }
-img{
+.imgMain{
     float: left;
     
         width:70px;
         height:70px;
         border-radius:150px;
-    
 }
 .infoNoticia{
     background-color: yellowgreen;
@@ -70,4 +70,114 @@ img{
 }
 .separador{
     color: green;
+}
+#destacados{
+    float: right;
+    width: 25%;
+    height: auto;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+#masVotados{
+    float: right;
+    width: 25%;
+    height: auto;
+    margin-right: 15px;
+    margin-top: 80px;
+}
+#sitios{
+    float: right;
+    width: 25%;
+    height: auto;
+    margin-right: 15px;
+    margin-top: 80px;
+    border: gray 1px solid;
+}
+#destacados:nth-child(even){
+    background-color: white;
+}
+.noticiaDerecha:nth-child(odd){
+    background-color: lime;
+}
+.tituloAside{
+    background-color: green;
+    text-align: center;
+    height: 20px;
+    color: white;
+    border: solid transparent 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.noticiaDerecha{
+    width: 100%;
+    height: 70px;
+    border:solid grey 1px;
+}
+.noticiaDerecha:last-child{
+    width: 100%;
+    height: 70px;
+    border:solid grey 1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.numeroDerecha1{
+    float: left;
+    margin-top: 25px;
+    margin: 1px solid black;
+    background-color: transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    
+}
+.numeroDerecha2{
+    float: left;
+    margin-top: 25px;
+    margin: 10px solid black;
+    border:3px solid black;
+    background-color: transparent;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+
+    
+}
+.textoDerecha{
+    width: 70%;
+    text-align: center;
+    height: 20px;
+    padding-top: 20px;
+    margin-left: 60px;
+}
+.fotoDerecha{
+    float: right;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    
+}
+.listaSitios{
+    border: 1px gray solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
