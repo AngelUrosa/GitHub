@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    height: 120px;
+    background-image: url(./cabecera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -10px
+}
+.titulo{
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 50px;
+    text-shadow: black 2px 4px;
+}
+#menuBarra{
+    width: 100%;
+    height: 30px;
+    background-color: lightgreen;
+    padding-top: 10px;
+    
+
+}
+.objetoBarra{
+border: 2px green solid;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+color: purple;
+margin-left: 10px;
+background-color: greenyellow;
+
+}
+main{
+    float: left;
+    width: 70%;
+    height: auto;
+}
+img{
+    float: left;
+    
+        width:70px;
+        height:70px;
+        border-radius:150px;
+    
+}
+.infoNoticia{
+    background-color: yellowgreen;
+}
+.usuario{
+    color: green;
+}
+.fecha{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.continuar{
+    color: green;
+    border: 2px green solid;
+    border-radius:150px;    
+    padding: 5px;
+    width: 140px;
+    height: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+.separador{
+    color: green;
+}
