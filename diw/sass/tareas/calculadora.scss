@@ -1,5 +1,43 @@
 main{
-    background-color: black;
-    width: 500px;
-    height: 500px;
+    background-color: #2A2A2A;
+    width: 40%;
+    height: 700px;
+    margin-left: 430px;
+margin-top: 20px;
 }
+.circulo{
+    
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-left: 10px;
+
+    &--verde{@extend .circulo;
+        background-color: green;
+    }
+    &--rojo{
+        @extend .circulo;
+        background-color: red;
+    }
+    &--amarillo{
+        @extend .circulo;
+        color:yellow;
+    }
+   }
+   
+   #pantalla{
+       width: auto;
+       height: 150px;
+       background-color: #2A2A2A;
+       
+   }
+   #valor{
+       height: 150px;
+       float: right;
+       margin-top: 50px;
+       font-size: 70pt;
+       margin-right: 20px;
+       color: white;
+   }
