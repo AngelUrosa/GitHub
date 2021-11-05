@@ -3,7 +3,6 @@ main {
   width: 40%;
   height: 700px;
   margin-left: 430px;
-  margin-top: 20px;
 }
 
 .circulo, .circuloverde, .circulorojo, .circuloamarillo {
@@ -13,6 +12,7 @@ main {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 .circuloverde {
