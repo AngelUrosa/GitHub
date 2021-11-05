@@ -6,7 +6,7 @@ main {
   margin-top: 20px;
 }
 
-.circulo, .circulo--verde, .circulo--rojo, .circulo--amarillo {
+.circulo, .circuloverde, .circulorojo, .circuloamarillo {
   width: 30px;
   height: 30px;
   -moz-border-radius: 50%;
@@ -15,16 +15,16 @@ main {
   margin-left: 10px;
 }
 
-.circulo--verde {
+.circuloverde {
   background-color: green;
 }
 
-.circulo--rojo {
+.circulorojo {
   background-color: red;
 }
 
-.circulo--amarillo {
-  color: yellow;
+.circuloamarillo {
+  background-color: yellow;
 }
 
 #pantalla {
@@ -40,4 +40,35 @@ main {
   font-size: 70pt;
   margin-right: 20px;
   color: white;
+}
+
+.tactil {
+  height: 520px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.boton, .botonGrisOscuro, .botonNaranja, .botonGrisClaro, .botonGrisClaroGordo {
+  height: 104px;
+  width: 100%;
+  font-size: 50px;
+  color: white;
+}
+
+.botonGrisOscuro {
+  background-color: #3f3f3d;
+}
+
+.botonNaranja {
+  background-color: #FE9E04;
+}
+
+.botonGrisClaro {
+  background-color: #5E5E5E;
+}
+
+.botonGrisClaroGordo {
+  background-color: #5E5E5E;
+  grid-column: 1 / 3;
 }

@@ -14,18 +14,19 @@ margin-top: 20px;
     border-radius: 50%;
     margin-left: 10px;
 
-    &--verde{@extend .circulo;
+    &verde{
+        @extend .circulo;
         background-color: green;
     }
-    &--rojo{
+    &rojo{
         @extend .circulo;
         background-color: red;
     }
-    &--amarillo{
+    &amarillo{
         @extend .circulo;
-        color:yellow;
+        background-color: yellow;
     }
-   }
+}
    
    #pantalla{
        width: auto;
@@ -41,3 +42,36 @@ margin-top: 20px;
        margin-right: 20px;
        color: white;
    }
+   .tactil{
+    
+       height: 520px;
+       width :100%;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+   .boton{
+       height: 104px;
+       width: 100%;
+       font-size: 50px;
+       color: white;
+
+       
+    &GrisOscuro{
+        @extend .boton;
+        background-color: #3f3f3d;
+    }
+    &Naranja{
+        @extend .boton;
+        background-color: #FE9E04;
+    }
+    &GrisClaro{
+        @extend .boton;
+        background-color: #5E5E5E;
+    }
+    &GrisClaroGordo{
+        @extend .boton;
+        background-color: #5E5E5E;
+        grid-column: 1 / 3;
+    }
+   }
+
