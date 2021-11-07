@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.Fmenu {
+  fornt-family: "Mohave", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 120px;
+  background-image: url(./ingenieria-informatica.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cabezera {
+  background-color: 0ffff;
+}
+
+#buscador {
+  float: right;
+  margin-top: 40px;
+  margin-right: 40px;
+  padding-left: 15px;
+  background: url(./lupa.svg) no-repeat scroll;
+}
+
+#listaBarra {
+  background-color: red;
+  padding: 10px;
+  display: flex;
+  gap: 60px;
+}
+
+.menuBarra {
+  margin-left: 60px;
+  text-decoration: none;
+  color: black;
+}
+
+#izquierda {
+  width: 15%;
+  float: left;
+}
+
+.tabla {
+  border: 2px solid purple;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+#arriba {
+  margin-top: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+#abajo {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+main {
+  height: auto;
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  flex-wrap: wrap;
+}
+
+.carta {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 148px;
+  height: 200px;
+}
+
+.carta:hover {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 148px;
+  height: 200px;
+  float: left;
+}
+
+.imagenCarta {
+  border: purple 2px solid;
+  width: 150px;
+  height: 150px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.descripcion {
+  margin-top: -7px;
+  border: 2px purple solid;
+  width: 150px;
+  text-align: center;
+  background-color: blue;
+  color: yellow;
+}
+
+.precio {
+  text-align: center;
+  border: 2px purple solid;
+  width: 150px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: green;
+  color: red;
+  font-weight: bold;
+}
+
+.precioD {
+  text-align: center;
+  border: 2px black solid;
+  width: 150px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: purple;
+  color: green;
+  font-weight: bold;
+}
+
+#derecha {
+  width: 20%;
+  height: auto;
+  float: right;
+}
+
+#cuerpo {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-column: 1fr 1fr 1fr;
+  grid-row: 1fr;
+}
+
+#pie {
+  width: 100%;
+  height: 300px;
+}
+
+.info {
+  width: 30%;
+  height: auto;
+  float: left;
+  margin: 20px;
+  text-align: center;
+  background-color: brown;
+}
+
+.titulo {
+  font-weight: bold;
+}
+
+.pieText {
+  text-align: center;
+}

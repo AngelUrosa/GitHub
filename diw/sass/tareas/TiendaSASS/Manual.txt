@@ -1,0 +1,4 @@
+Como podemos observar en _tema.scss tenemos todas las variables para ser modificadas
+tanto como en color de letra, color de fondo, padding , margin , tipo de fuente y bordes circulares o no.
+
+He puesto colores raros para que veas que que rapidamente puedes poner los colores o estilos que quieras a la pagina web con este metodo.

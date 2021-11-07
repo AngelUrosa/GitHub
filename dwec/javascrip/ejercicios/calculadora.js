@@ -17,10 +17,7 @@ let calculadora = {
 }
 
 //const OPERADORES_UNARIOS="CMR";
-const OPERADORES_UNARIOS= new Set();
-OPERADORES_UNARIOS.add(C);
-OPERADORES_UNARIOS.add(M);
-OPERADORES_UNARIOS.add(R);
+
 
 
 function menuCalculadora() {

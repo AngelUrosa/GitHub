@@ -1,0 +1,220 @@
+
+@import "_variables.scss";
+
+*{
+    margin: $marginGeneral;
+    padding: $paddingGeneral;
+}
+header{
+    width: 100%;
+    height: 120px;
+    background-image: url(./cabecera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -10px;
+}
+.titulo{
+    color: $colorTitulo;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 50px;
+    text-shadow: black 2px 4px;
+}
+#menuBarra{
+    width: 100%;
+    height: 30px;
+    background-color: $fondoBarraGeneral;
+    padding-top: 10px;
+    
+
+}
+.objetoBarra{
+border: 2px $bordeBarra solid;
+border-top-left-radius: $radioGeneral;
+border-top-right-radius: $radioGeneral;
+border-bottom-left-radius: $radioGeneral;
+border-bottom-right-radius: $radioGeneral;
+color: $colorBarra;
+margin-left: 10px;
+background-color: $fondoBarra;
+
+}
+main{
+    float: left;
+    width: 70%;
+    height: auto;
+    margin-top: 5px;
+    background-color: $fondoMain;
+}
+.imgMain{
+    float: left;
+    
+        width:70px;
+        height:70px;
+        border-radius:150px;
+}
+.infoNoticia{
+    background-color:$fondoNoticia;
+    color:$letraNoticia;
+}
+.usuario{
+    color: $colorUsuario;
+}
+.fecha{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.continuar{
+    color: $colorContinuar;
+    background-color: $fondoContinuar;
+    border: 2px $bordeContinuar solid;
+    border-radius:150px;    
+    padding: 5px;
+    width: 140px;
+    height: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+.separador{
+    color: $colorSeparador;
+}
+#destacados{
+    float: right;
+    width: 25%;
+    height: auto;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+#masVotados{
+    float: right;
+    width: 25%;
+    height: auto;
+    margin-right: 15px;
+    margin-top: 80px;
+}
+#sitios{
+    float: right;
+    width: 25%;
+    height: 110px;
+    margin-right: 15px;
+    margin-top: 80px;
+    border: $bordeSitios 1px solid;
+    border-top-left-radius: $radioGeneral;
+    border-top-right-radius: $radioGeneral;
+    border-bottom-left-radius: $radioGeneral;
+    border-bottom-right-radius: $radioGeneral;
+
+}
+.noticiaDerecha:nth-child(even){
+    background-color: $fondoAsideImpar;
+}
+.noticiaDerecha:nth-child(odd){
+    background-color: $fondoAsidePar;
+}
+.tituloAside{
+    background-color: $fondoTituloAside;
+    text-align: center;
+    height: 20px;
+    color: $colorTituloAside;
+    border: solid transparent 1px;
+    border-top-left-radius: $radioGeneral;
+    border-top-right-radius: $radioGeneral;
+
+}
+.noticiaDerecha{
+    width: 100%;
+    height: 70px;
+    border:solid $bordeNoticiaDerecha 1px;
+}
+.noticiaDerecha:last-child{
+    width: 100%;
+    height: 70px;
+    border:solid $bordeNoticiaDerecha 1px;
+    border-bottom-left-radius: $radioGeneral;
+    border-bottom-right-radius: $radioGeneral;
+}
+.numeroDerecha1{
+    float: left;
+    margin-top: 25px;
+    margin: 1px solid $bordeNumero;
+    background-color: $fondoNumero;
+    border-top-left-radius: $radioGeneral;
+    border-top-right-radius: $radioGeneral;
+    border-bottom-left-radius: $radioGeneral;
+    border-bottom-right-radius: $radioGeneral;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    color:$colorNumero;
+    
+}
+.numeroDerecha2{
+    float: left;
+    margin-top: 25px;
+    margin: 10px solid ;
+    border:3px solid $bordeNumero;
+    background-color: $fondoNumero;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    border-top-left-radius: $radioGeneral;
+    border-top-right-radius: $radioGeneral;
+    border-bottom-left-radius: $radioGeneral;
+    border-bottom-right-radius: $radioGeneral;
+    color: $colorNumero;
+    
+
+    
+}
+.textoDerecha{
+    width: 70%;
+    text-align: center;
+    height: 20px;
+    padding-top: 20px;
+    margin-left: 60px;
+}
+.fotoDerecha{
+    float: right;
+    border-top-left-radius: $radioGeneral;
+    border-top-right-radius: $radioGeneral;
+    border-bottom-left-radius: $radioGeneral;
+    border-bottom-right-radius: $radioGeneral;
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    
+}
+.listaSitios{
+    border: 1px $bordeSitios solid;
+    border-top-left-radius: $radioGeneral;
+    border-top-right-radius: $radioGeneral;
+    border-bottom-left-radius: $radioGeneral;
+    border-bottom-right-radius: $radioGeneral;
+    height: 20px;
+    margin-top: 4px;
+}
+.contornoSitios{
+    width: auto;
+    height: 85px;
+}
+#pie{
+    
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+.infoPie{
+    margin-left: 200px;
+}
+
+.tituloPie{
+    color: $colorTituloPie;
+    font-weight: bold;
+    font-size: 30px;
+}
+.pieText{
+    color: $colorPie;
+}
