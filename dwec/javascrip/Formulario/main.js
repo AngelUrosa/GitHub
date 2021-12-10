@@ -1,5 +1,7 @@
 const inputs = document.querySelectorAll(".confi");
 
+const index = document.querySelectorAll("inputindex");
+
 const nombre = document.getElementById("nombre");
 
 const apellidos = document.getElementById("apellidos");
@@ -31,7 +33,19 @@ inputs.forEach(input => {
 
     input.addEventListener('change', cambio);
     input.addEventListener('focus',ayuda);
+    input.addEventListener('keyup',enter);
 });
+
+
+function enter(event) {
+    if (event.keyCode == 'Enter') {
+        event.preventDefault();
+        event.currentTarget.getAttribute("inputindex");
+        index.forEach(element => {
+            focus(element.currentTarget.getAttribute("inputindex")+1);
+        });
+    }
+}
 
 function cambio(event) {
     if (event.currentTarget.value.trim()=="") {
@@ -102,11 +116,11 @@ function cambio(event) {
 
 function ayuda(event) {
 
+
     switch (event.currentTarget.id) {
         case "nombre":
             parrafo.innerHTML="Escribe el nombre sin numeros";
             break;
-    
         case "apellidos":
             parrafo.innerHTML="Escribe el apellido sin numeros";
             break;
@@ -124,6 +138,7 @@ function ayuda(event) {
             break;
         
     }
+    
 
 }
 
