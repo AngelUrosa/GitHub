@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #49b2cc;
+    width: 400px;
+    height: 200px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+#table{
+    background-color: yellow;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}

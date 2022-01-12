@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <title>Ajax Table</title>
+</head>
+<body>
+    <form action="" method="POST" id="formulario">
+        <label for="campo">Nombre a consultar</label>
+        <input type="text" name="campo" id="campo">
+
+        <label for="optionPeticion">Seleccione la opcion de la petición</label>
+        <select name="optionPeticion" id="optionPeticion">
+            <option value="xmlhttp" selected>XmlHttpRequest</option>
+            <option value="fetch">Fetch</option>
+        </select>
+
+        <label for="optionImpres">Seleccione la opcion de impresion</label>
+        <select name="optionImpres" id="optionImpres">
+            <option value="javaScript" selected>javaScript</option>
+            <option value="json">json2html</option>
+            <option value="jQuery">jQuery</option>
+        </select>
+
+        <input type="submit" value="Enviar" id="enviar">
+    </form>
+
+    <div id="tableDiv">
+        <table id="table"></table>
+    </div>
+</body>
+</html>
