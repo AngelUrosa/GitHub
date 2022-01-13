@@ -18,6 +18,7 @@ public class Articulo implements Serializable {
     private Double stock;
     private String imagen;
     private Proveedor proveedor;
+    private SubCategoria subCategoria;
 
 
 
@@ -98,5 +99,14 @@ public class Articulo implements Serializable {
     }
     public void setProveedor(Proveedor proveedor) {
         this.proveedor = proveedor;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "id_subcategoria",nullable = false)
+    public SubCategoria getSubCategoria() {
+        return subCategoria;
+    }
+    public void setSubCategoria(SubCategoria subCategoria) {
+        this.subCategoria = subCategoria;
     }
 }
