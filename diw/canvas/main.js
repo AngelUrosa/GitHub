@@ -22,15 +22,17 @@ window.addEventListener("load",()=>{
 
 
 
-function Partida() {
+function Partida(niveldificultad) {
 
+    nivelDificultad=niveldificultad;
+    tamaño
 
 
     //Refrescar pantalla
 
     refrescarPantalla();
 
-document.getElementById("juego").addEventListener("click",on)
+//document.getElementById("juego").addEventListener("click",on)
 
 
 var x = (Math.random()*250)+1;
