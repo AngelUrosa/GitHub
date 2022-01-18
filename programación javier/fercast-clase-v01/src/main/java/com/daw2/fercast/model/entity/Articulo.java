@@ -19,6 +19,9 @@ public class Articulo implements Serializable {
     private String imagen;
     private Proveedor proveedor;
     private SubCategoria subCategoria;
+    private List<Novedad> novedades;
+    private List<DetalleFactura> detallesFacturas;
+    private List<Oferta> ofertas;
 
 
 
@@ -84,7 +87,8 @@ public class Articulo implements Serializable {
     public void setStock(Double stock) {
         this.stock = stock;
     }
-@Column(length = 75)
+
+    @Column(length = 75)
     public String getImagen() {
         return imagen;
     }
@@ -108,5 +112,29 @@ public class Articulo implements Serializable {
     }
     public void setSubCategoria(SubCategoria subCategoria) {
         this.subCategoria = subCategoria;
+    }
+
+    @OneToMany(mappedBy = "articulo")
+    public List<Novedad> getNovedades() {
+        return novedades;
+    }
+    public void setNovedades(List<Novedad> novedades) {
+        this.novedades = novedades;
+    }
+
+    @OneToMany(mappedBy = "articulo")
+    public List<DetalleFactura> getDetallesFacturas() {
+        return detallesFacturas;
+    }
+    public void setDetallesFacturas(List<DetalleFactura> detallesFacturas) {
+        this.detallesFacturas = detallesFacturas;
+    }
+
+    @OneToMany(mappedBy = "articulo")
+    public List<Oferta> getOfertas() {
+        return ofertas;
+    }
+    public void setOfertas(List<Oferta> ofertas) {
+        this.ofertas = ofertas;
     }
 }

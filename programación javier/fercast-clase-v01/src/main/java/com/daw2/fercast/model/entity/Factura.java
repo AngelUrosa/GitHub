@@ -11,7 +11,7 @@ public class Factura {
     private Integer id;
     private String numero;
     private Date fecha;
-    //private Cliente cliente; //CUANDO SE HAGA CLIENTE
+    private Cliente cliente;
     private Date createAt;
 
     @Id
@@ -41,12 +41,14 @@ public class Factura {
         this.fecha = fecha;
     }
 
-   /* public Cliente getCliente() {
+    @ManyToOne
+    @JoinColumn(name = "id_cliente")
+    public Cliente getCliente() {
         return cliente;
     }
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
-    } */
+    }
 
     @Column(name = "create_at", nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
